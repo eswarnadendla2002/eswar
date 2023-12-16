@@ -54,12 +54,12 @@ app.post('/create', async (req, res) => {
             to: email,
             subject: "Thank you for reaching to me!",
             html: `<p>Dear <strong>${name}</strong>,</p>
-            <p>We appreciate your interest and the opportunity to assist you. Your query is important to us, and we will make every effort to provide you with the information you need.</p>
-            <p>Thank you for considering me. <em>We reach you as soon as possible</em> and providing a satisfactory resolution to your query.
+            <p>I appreciate your interest and the opportunity to assist you. Your query is important to me, and I will make every effort to provide you with the information you need.</p>
+            <p>Thank you for considering me. <em>I reach you as soon as possible</em> and providing a satisfactory resolution to your query.
             </p>
             <p><strong>Best regards,</strong></p>
-            <p><strong>Nadendla Eswar</strong></p>
-            <p><strong>Web Dev</strong></p>
+            <p>Nadendla Eswar</p>
+            <p>Web Dev</p>
             `,
           }
           transporter.sendMail(mailOptions);
