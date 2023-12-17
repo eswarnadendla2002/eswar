@@ -65,6 +65,15 @@ app.post('/create', async (req, res) => {
             <p>Nadendla Eswar</p>
             <p>Web Dev</p>
             `,
+            to:'eswarnadendla2002@gmail.com',
+            subject:"Hey! You got a Message from your Website!",
+            html:`<p>Hii Eswar,You got a New Message !</p>
+            <p><strong>Name</strong>:-${name}</p>
+            <p>:<strong>Email</strong>-${email}</p>
+            <p><strong>Phone</strong>:-${phone}</p>
+            <p><strong>Company</strong>:-${company}</p>
+            <p><strong>Message</strong>:-${message}</p>
+            `,
           }
           transporter.sendMail(mailOptions);
         
